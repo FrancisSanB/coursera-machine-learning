@@ -24,7 +24,6 @@ a2 = [ones(m,1) a2'];
 z3 = Theta2 * a2';
 h_theta = sigmoid(z3); % h_theta equals a3
 
-vectors containing only values 0 or 1 (page 5 of ex4.pdf)
 y_new = zeros(num_labels, m); % 10*5000
 for i=1:m,
   y_new(y(i),i)=1;
@@ -32,7 +31,6 @@ end
 
 J = (1/m) * sum ( sum ( (-y_new) .* log(h_theta) - (1-y_new) .* log(1-h_theta) ));
 
-first column of each matrix.
 t1 = Theta1(:,2:size(Theta1,2));
 t2 = Theta2(:,2:size(Theta2,2));
 
