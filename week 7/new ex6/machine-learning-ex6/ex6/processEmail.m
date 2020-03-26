@@ -97,14 +97,18 @@ while ~isempty(email_contents)
     %       str2). It will return 1 only if the two strings are equivalent.
     %
 
-    % find index of the word in vocabList (if Exist)
-    index = find(strcmp(str,vocabList),1);
-    
-    % Add the index in the vector word_indices
-    word_indices = [word_indices; index];
-    
-    %% =============================================================
-    
+
+
+
+
+
+
+
+
+
+    % =============================================================
+
+
     % Print to screen, ensuring that the output lines are not too long
     if (l + length(str) + 1) > 78
         fprintf('\n');
@@ -112,10 +116,10 @@ while ~isempty(email_contents)
     end
     fprintf('%s ', str);
     l = l + length(str) + 1;
-      
-  end
-  
-  % Print footer
-  fprintf('\n\n=========================\n');
+
+end
+
+% Print footer
+fprintf('\n\n=========================\n');
 
 end
